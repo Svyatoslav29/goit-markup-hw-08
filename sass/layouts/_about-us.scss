@@ -1,0 +1,38 @@
+.about-us-sec {
+padding-bottom: 94px;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.about-us-item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    max-width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--bg-text-color);
+    position: relative;
+    bottom: 70px;
+    }
+
+.about-us-item-cont {
+height: 294px;
+width: 370px;
+}
+
+.about-us__img{
+display: block;
+}
+
+.about-us-item-text {
+display: flex;
+}

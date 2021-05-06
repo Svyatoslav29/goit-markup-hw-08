@@ -1,0 +1,103 @@
+.form-modal-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-modal__wrap-input {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .form-modal__field {
+  width: 482px;
+  height: 40px;
+  padding-left: 42px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px ;
+  transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus  {
+    border-color: var(--accent-color);
+  }
+  }
+  
+  .form-modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--animation) cubic-bezier(0.4, 0, 0.2, 1)
+  }
+  
+  .form-modal__field:hover + .form-modal__icon,
+  .form-modal__field:focus + .form-modal__icon {
+    fill: var(--accent-color);
+  }
+  
+  .form-modal__label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+  }
+  
+  .form-modal__comment-field {
+  height: 120px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  border-radius: 4px;
+  transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  border-color: var(--accent-color);
+  }
+  }
+  
+  .form-modal__label-check {
+    margin-bottom: 30px;
+    padding: 0 50px 0 50px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-modal__field-check {
+    appearance: none;
+  }
+  
+  .form-modal__field-check:checked + .form-modal__check-icon {
+    background-color: var(--accent-color);
+    background-image: url(../images/icons/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    fill: var(--accent-color);
+  }
+  
+  .form-modal__check-icon {
+    margin-right: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .form-modal__link {
+    color: var(--accent-color);
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+  }
+  
+  .form-modal .button-main {
+    margin: auto;
+  }

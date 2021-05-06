@@ -1,0 +1,37 @@
+.subscribe-form__field {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--bg-text-color);
+    transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+    &::placeholder {
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    }
+    
+    .subscribe-form__container {
+      display: flex;
+    }
+    
+    .subscribe-form__icon {
+      margin-left: 10px;
+    }
+    
+   
+    

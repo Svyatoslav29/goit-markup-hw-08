@@ -1,0 +1,43 @@
+
+.clients-sec {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+    
+    .clients {
+    display: flex;
+    list-style: none;
+    box-sizing: inherit;
+    margin-top: 50px;
+    justify-content: space-between;
+    }
+    
+    .clients__item {
+      border: 1px solid #EEEEEE;
+      border-radius: 4px;
+      transition: border var(--animation) var(--animation-timing-function);
+
+      &:hover,
+      &:focus {
+      border: 1px solid #2196F3;
+      }
+      }
+      
+    
+    .clients__link {
+    width: 170px;
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--animation) var(--animation-timing-function), background-color var(--animation) var(--animation-timing-function);
+    }
+    
+    .clients__icon {
+    fill: var(--icon-main-color);
+    transition: fill var(--animation) var(--animation-timing-function);
+    }
+    
+    
+    

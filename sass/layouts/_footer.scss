@@ -1,0 +1,78 @@
+.logo__studio-foot {
+    color: var(--bg-text-color);   
+  }
+  
+  .logo-footer {
+    display: inline-block;
+    height: 31px;
+    margin-bottom: 20px;
+  }
+
+  .footer-sub-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bg-text-color);
+    margin-bottom: 20px;
+    }
+
+  .footer-sec {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
+  
+  .address-list__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .first-main-sec,
+  .footer-sec {
+    background-color: var(--dark-bg-color);
+  }
+  
+  .address {
+    text-decoration: none;
+    color: inherit;    
+    font-style: inherit;
+  }
+  
+  .address-list__link,
+  .address-list__link-map {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation) var(--animation-timing-function);  
+  }
+  .address-list__link-map {
+      color: var(--white-bg-color);
+      transition: color var(--animation) var(--animation-timing-function);
+  }
+  
+  .address-list__link:hover,
+  .address-list__link:focus,
+  .address-list__link-map:focus,
+  .address-list__link-map:hover {
+    color: var(--accent-color);
+  }
+  
+  .address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+  }
+  
+  .social-sec__footer-icon {
+    fill: var(--bg-text-color);
+    transition: fill var(--animation) var(--animation-timing-function), background-color var(--animation) var(--animation-timing-function);
+  }
+  
+  .social-icons-tooter-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+        
