@@ -1,55 +1,64 @@
 .menu-nav {
-    display: inline-flex;
-  }
-  
-  .menu-nav li:not(:last-child) {
-    margin-right: 50px;
-  }
-  
-   .menu-nav__link,
-   .menu-nav__link-active {
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.02em;
-      color: var(--title-color);
-      padding-top: 32px;
-      padding-bottom: 32px;
-      display: inline-block;
-      transition: color var(--animation) var(--animation-timing-function);
-      position: relative;
+  display: inline-flex;
+}
 
-      &:focus,
-      &:hover {
-          color: var(--accent-color);
-      }
-   }
-   .menu-nav__link-active {
-       color: var(--accent-color);
-       transition: color var(--animation) var(--animation-timing-function);
-   }
-  
-  .menu-nav__link-head-adress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 16px;
-    transition: color var(--animation) var(--animation-timing-function);
+.menu-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-nav__link,
+.menu-nav__link-active {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+  transition: color var(--animation) var(--animation-timing-function);
+  position: relative;
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.menu-nav__link-active {
+  color: var(--accent-color);
+  transition: color var(--animation) var(--animation-timing-function);
+}
+
+.menu-nav__link-head-adress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 16px;
+  transition: color var(--animation) var(--animation-timing-function);
+}
+
+.menu-nav__link-head-adress:hover .menu-nav__icon,
+.menu-nav__link-head-adress:focus .menu-nav__icon {
+  stroke: currentColor;
+}
+
+.menu-nav__link-head-adress .menu-nav__icon {
+  stroke: var(--main-text-color);
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .navigation,
+  .menu-nav
+   {
+    display: none; 
   }
   
-  .menu-nav__link-head-adress:hover .menu-nav__icon,
-  .menu-nav__link-head-adress:focus .menu-nav__icon {
-    stroke: currentColor;
-  }
-  
-  .menu-nav__link-head-adress .menu-nav__icon {
-    stroke: var(--main-text-color);
-    margin-right: 10px;
-    fill: currentColor;
-   }
-  
-  .navigation {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-  }
+}
