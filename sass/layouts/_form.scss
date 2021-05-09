@@ -1,37 +1,67 @@
 .subscribe-form__field {
-    width: 358px;
-    height: 50px;
-    margin-right: 12px;
-    padding-left: 16px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    font-family: Roboto;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--bg-text-color);
-    transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--bg-text-color);
+  transition: border-color var(--animation) cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-    }
-    &::placeholder {
-      letter-spacing: 0.03em;
-      color: rgba(255, 255, 255, 0.6);
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    }
-    
-    .subscribe-form__container {
-      display: flex;
-    }
-    
-    .subscribe-form__icon {
-      margin-left: 10px;
-    }
-    
-   
-    
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .subscribe-form__field {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+.subscribe-form__container {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .subscribe-form__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.subscribe-form__icon {
+  margin-left: 10px;
+}
+
+@media screen and (max-width:1200px) {
+  .logo-footer-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .logo-footer-container {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .social-sec {
+    text-align: center;
+  }
+}

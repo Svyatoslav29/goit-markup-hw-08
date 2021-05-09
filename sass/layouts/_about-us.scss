@@ -2,6 +2,12 @@
 padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199.98px) {
+    .about-us-sec {
+      display: none; 
+    }
+  }
+
 .about-us {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -6,13 +6,17 @@
     
     .clients {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
     list-style: none;
     box-sizing: inherit;
-    margin-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
     }
     
     .clients__item {
+      margin-bottom: 30px;
+      margin-left: 30px;
       border: 1px solid #EEEEEE;
       border-radius: 4px;
       transition: border var(--animation) var(--animation-timing-function);
@@ -21,9 +25,24 @@
       &:focus {
       border: 1px solid #2196F3;
       }
+
+      @media screen and (min-width: 1200px) {
+        --clients__item: 4;
       }
-      
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+      --clients__item: 2; 
+    }
     
+  
+    @media screen and (min-width: 1200px) {
+        .clients__item {
+    margin-bottom: 0;
+         } 
+        }
+
+
     .clients__link {
     width: 170px;
     height: 90px;
@@ -32,12 +51,16 @@
     align-items: center;
     justify-content: center;
     transition: color var(--animation) var(--animation-timing-function), background-color var(--animation) var(--animation-timing-function);
+
+      &:hover .clients__icon,
+      &:focus .clients__icon{
+      fill: var(--accent-color);
+      }
     }
+   
     
     .clients__icon {
     fill: var(--icon-main-color);
     transition: fill var(--animation) var(--animation-timing-function);
     }
-    
-    
     
