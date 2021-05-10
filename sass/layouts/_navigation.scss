@@ -32,6 +32,7 @@
   display: inline-block;
   transition: color var(--animation) var(--animation-timing-function);
   position: relative;
+  align-items: center;
 
   &:focus,
   &:hover {
@@ -63,9 +64,14 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1200px) {
-  .menu-nav__link-head-adress {
-    padding: 0;
+  .mail-nav {
+    padding: 21px 0 0 0;
+    justify-content: start;
     margin-bottom: 10px;
+  }
+
+  .tel-nav {
+    padding: 0 0 21px 0;
     justify-content: start;
   }
 }

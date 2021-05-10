@@ -10,6 +10,15 @@
   color: var(--bg-text-color);
 }
 
+@media screen and (max-width:1199px) {
+  .hero-title {
+font-size: 26px;
+line-height: 42px;
+text-align: center;
+max-width: 360px;
+  }
+}
+
 .hero-sec {
   display: flex;
   align-items: center;
