@@ -39,6 +39,12 @@ max-width: 360px;
   margin-right: auto;
 }
 
+@media screen and (max-width:1199px) {
+  .hero-sec {
+    height: 400px;
+  }
+}
+
 @media not all, (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-sec {
     background-image: linear-gradient(
