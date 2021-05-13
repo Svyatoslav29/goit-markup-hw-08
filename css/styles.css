@@ -661,10 +661,6 @@ h1, h2, h3, h4, p, ul {
   align-items: baseline;
 }
 
-.mobile-menu__list {
-  margin-bottom: 302px;
-}
-
 .mobile-menu__item {
   margin-bottom: 32px;
 }
@@ -1230,10 +1226,17 @@ h1, h2, h3, h4, p, ul {
   background: var(--bg-text-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  max-width: 372px;
 }
 
 .portfolio-list__link:focus, .portfolio-list__link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .portfolio-list__link {
+    max-width: 390px;
+  }
 }
 
 .portfolio-list__item-name {
